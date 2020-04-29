@@ -9,7 +9,7 @@ foi chamado.
 // }
 // sayHello();
 
-setTimeout(sayHello, 1000);
+// setTimeout(sayHello, 1000);
 
 
 
