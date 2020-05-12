@@ -12,9 +12,10 @@ function trataRetorno(err, res) {
     valores.forEach(element => {
         console.log(element);
     });
-
 }
 
 fs.readFile('./dados.json', trataRetorno);
+
+console.log('Término do APP!')
 
 
