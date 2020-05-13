@@ -8,10 +8,10 @@ function callback(err, res){
     console.log( String(res) )
 }
 
-fs.readFile('./arq01.txt', (err, res01) => {
+fs.readFile('./arq01.txt', (err, res) => {
     if(err) return console.log(err)
 
-    console.log( String(res01) )
+    console.log( String(res) )
 })
 console.log(2)
 
