@@ -7,10 +7,13 @@ const port = 3000;
 
 let app = express()
 
-// app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-consign().include('routes').into(app)
+consign()
+    .include('routes')
+    .include('utils')
+    .into(app)
 
 app.listen(port, hostname,
     () => console.log(`Server running at http://${hostname}:${port}/`))
