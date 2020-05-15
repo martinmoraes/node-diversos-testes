@@ -1,6 +1,9 @@
-const array = ['a', 'b', 'c'];
 
-for (const element in array) {
-    console.log(element +' - '+ array[element])
+
+const mensagem = (msg, tempo) => {
+    setInterval(
+        () => console.log(msg), tempo )
 }
 
+mensagem('olá', 200)
+mensagem('Martin', 200)

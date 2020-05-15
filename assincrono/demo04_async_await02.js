@@ -12,10 +12,11 @@ const readFile = file => new Promise((resolve, reject) => {
 const leitura = async() => {
     console.log(4)
     try {
-        const contentes01 = await readFile('./arq01a.txt')
+        const contentes01 = await readFile('./arq01.txt')
         console.log(contentes01)
         console.log(5)
         const contentes02 = await readFile('./arq02.txt')
+        console.log(6)
     
         console.log(contentes01 + '\n' + contentes02)
 
@@ -29,6 +30,6 @@ const leitura = async() => {
 
 }
 
-leitura()
 console.log(2)
+leitura()
 console.log(3)
