@@ -1,12 +1,12 @@
 // module "my-module.js"
   
-  exports.cube = function cube(x) {
+  function cube(x) {
     return x * x * x;
   }
   
-  exports.foo = Math.PI + Math.SQRT2;
+  const foo = Math.PI + Math.SQRT2;
   
-  exports.graph = {
+  var graph = {
     options: {
         color:'white',
         thickness:'2px'
@@ -16,4 +16,5 @@
     }
   }
   
-  // module.exports = {cube, foo, graph }
+  export default {cube, foo, graph };
+  // module.exports = {cube, foo, graph };
